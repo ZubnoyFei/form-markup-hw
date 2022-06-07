@@ -28,7 +28,6 @@
         <option>Дніпро</option>
         <option>Львів</option>
     </select>
-
     <h2>Почта и пароль</h2>
     <label for="email">Email *</label>
     <input id="email" name="name" type="email" required>
@@ -38,7 +37,6 @@
     <input id="password" name="name" type="password" required>
     <label for="confirm-password"> Подтвердить пароль*</label>
     <input id="confirm-password" type="password" required>
-
     <h2>Контактная информация</h2>
     <label for="main-phonenumber">Телефон *</label>
     <input id="main-phonenumber" type="tel" required>
@@ -46,8 +44,72 @@
     <input id="additional-number" type="tel">
     <label for="skype">Skype</label>
     <input id="skype" type="text">
+    <h2>Уровень навыков</h2>
+    <label for="html">HTML</label>
+    <input id="html" type="range">
+    <label for="css">CSS</label>
+    <input id="css" type="range">
+    <h2>О себе</h2>
+    <label for="about">Расскажите о себе</label>
+    <textarea id="about" cols="50" rows="5"></textarea>
+    <h2>Ваш пол</h2>
+    <label for="male">
+        <input id="male" type="radio" name="male-female-other"> Мужской
+    </label>
+<label for="female">
+    <input id="female" type="radio" name="male-female-other">Женский </label>
+<label for="other">
+    <input id="other" type="radio" name="male-female-other"> Другое
+</label>
+    <label for="color">Ваш любимый цвет</label>
+    <input id="color" type="color">
+    <h2>Вид занятости</h2>
+    <label id="full-time">Работаю Full-time
+        <input type="radio" name="employment-type">
+    </label>
+    <label id="part-time">Работаю part-time
+        <input type="radio" name="employment-type">
+    </label>
+    <label id="freelance">Freelance
+        <input type="radio" name="employment-type">
+    </label>
+    <label id="temporarily-unemployed">Временно не работаю
+        <input type="radio" name="employment-type">
+    </label>
+    <label id="student">Студент
+        <input type="radio" name="employment-type">
+    </label>
+    <h2>Наличие домашних животных</h2>
+    <label id="cat">Котик
+        <input type="checkbox" name="pets">
+    </label>
+    <label id="dog">Собачка
+        <input type="checkbox" name="pets">
+    </label>
+    <label id="bird">Птичка
+        <input type="checkbox" name="pets">
+    </label>
+    <label id="fish">Рыбка
+        <input type="checkbox" name="pets">
+    </label>
+    <label id="other-pet">Другое
+        <input type="checkbox" name="pets">
+    </label>
+    <label for="add-the-file">Добавить файл</label>
+    <input id="add-the-file" type="file">
+    <h2>Изучаемое направление</h2>
+    <label for="specialization"> Выберите направление из списка</label>
+    <select id="specialization">
+        <option selected disabled value="">Выберите направление</option>
+        <option>Front-end</option>
+        <option>Back-end</option>
+        <option>DevOps</option>
+        <option>QA</option>
+        <option>Web design</option>
+    </select>
 
-
+    <button type="submit">Отправить</button>
+<button type="reset">Очистить</button>
 </form>
 </body>
 </html>
