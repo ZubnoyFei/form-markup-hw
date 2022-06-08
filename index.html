@@ -11,19 +11,19 @@
 <form>
     <h1>Форма регистрации</h1>
     <fieldset>
-        <h2>Основная информация</h2>
+        <legend>Основная информация</legend>
         <label for="name"> Имя *</label>
-        <input id="name" name="name" type="text" placeholder="Введите ваше имя" required>
+        <input id="name" name="first-name" type="text" placeholder="Введите ваше имя" required>
         <label for="surname"> Фамилия *</label>
-        <input id="surname" name="name" type="text" placeholder="Введите вашу фамилию" required>
+        <input id="surname" name="last-name" type="text" placeholder="Введите вашу фамилию" required>
         <label for="nickname">Nickname *</label>
-        <input id="nickname" name="name" type="text" placeholder="Введите ваш nickname" required>
+        <input id="nickname" name="nickname" type="text" placeholder="Введите ваш nickname" required>
         <label for="birthdate">Ваша дата рождения *</label>
-        <input id="birthdate" name="name" type="date" required>
+        <input id="birthdate" name="birthdate" type="date" required>
         <label for="birthtime">Ваше время рождения *</label>
-        <input id="birthtime" name="name" type="time" required>
+        <input id="birthtime" name="city" type="time" required>
         <label for="your-city"> Ваш город *</label>
-        <select id="your-city" name="name" required>
+        <select id="your-city" name="city" required>
             <option selected disabled value="">Выберите город</option>
             <option>Київ</option>
             <option>Дніпро</option>
@@ -31,84 +31,84 @@
         </select>
     </fieldset>
     <fieldset>
-        <h2>Почта и пароль</h2>
+        <legend>Почта и пароль</legend>
         <label for="email">Email *</label>
-        <input id="email" name="name" type="email" required>
+        <input id="email" name="spare-email" type="email" required>
         <label for="spare-email">Запасной Email *</label>
-        <input id="spare-email" name="name" type="email" required>
+        <input id="spare-email" name="password" type="email" required>
         <label for="password"> Пароль*</label>
-        <input id="password" name="name" type="password" required>
+        <input id="password" name="confirm-password" type="password" required>
         <label for="confirm-password"> Подтвердить пароль*</label>
         <input id="confirm-password" type="password" required>
     </fieldset>
     <fieldset>
-        <h2>Контактная информация</h2>
+        <legend>Контактная информация</legend>
         <label for="main-phonenumber">Телефон *</label>
-        <input id="main-phonenumber" type="tel" required>
+        <input id="main-phonenumber" type="tel" required name="phonenumber">
         <label for="additional-number">Дополнительный телефон</label>
-        <input id="additional-number" type="tel">
+        <input id="additional-number" type="tel" name="additional-phone-number">
         <label for="skype">Skype</label>
-        <input id="skype" type="text">
+        <input id="skype" type="text" name="skype">
     </fieldset>
     <fieldset>
-        <h2>Уровень навыков</h2>
+        <legend>Уровень навыков</legend>
         <label for="html">HTML</label>
-        <input id="html" type="range">
+        <input id="html" type="range" name="html">
         <label for="css">CSS</label>
-        <input id="css" type="range">
+        <input id="css" type="range" name="css">
     </fieldset>
     <fieldset>
-        <h2>О себе</h2>
+        <legend>О себе</legend>
         <label for="about">Расскажите о себе</label>
-        <textarea id="about" cols="50" rows="5"></textarea>
+        <textarea id="about" cols="50" rows="5" name="about-customer"></textarea>
         <h2>Ваш пол</h2>
         <label for="male">
-            <input id="male" type="radio" name="male-female-other"> Мужской
+            <input id="male" type="radio" name="male"> Мужской
         </label>
         <label for="female">
-            <input id="female" type="radio" name="male-female-other">Женский </label>
+            <input id="female" type="radio" name="female">Женский </label>
         <label for="other">
-            <input id="other" type="radio" name="male-female-other"> Другое
+            <input id="other" type="radio" name="other"> Другое
         </label>
         <label for="color">Ваш любимый цвет</label>
-        <input id="color" type="color">
+        <input id="color" type="color" name="color">
         <h2>Вид занятости</h2>
         <label id="full-time">Работаю Full-time
-            <input type="radio" name="employment-type">
+            <input type="radio" name="full-time">
         </label>
         <label id="part-time">Работаю part-time
-            <input type="radio" name="employment-type">
+            <input type="radio" name="part-time">
         </label>
         <label id="freelance">Freelance
-            <input type="radio" name="employment-type">
+            <input type="radio" name="freelance">
         </label>
         <label id="temporarily-unemployed">Временно не работаю
-            <input type="radio" name="employment-type">
+            <input type="radio" name="temporarily-unemployed">
         </label>
         <label id="student">Студент
-            <input type="radio" name="employment-type">
+            <input type="radio" name="student">
         </label>
         <h2>Наличие домашних животных</h2>
         <label id="cat">Котик
-            <input type="checkbox" name="pets">
+            <input type="checkbox" name="cat">
         </label>
         <label id="dog">Собачка
-            <input type="checkbox" name="pets">
+            <input type="checkbox" name="dog">
         </label>
         <label id="bird">Птичка
-            <input type="checkbox" name="pets">
+            <input type="checkbox" name="bird">
         </label>
         <label id="fish">Рыбка
-            <input type="checkbox" name="pets">
+            <input type="checkbox" name="fish">
         </label>
         <label id="other-pet">Другое
-            <input type="checkbox" name="pets">
+            <input type="checkbox" name="other-pet">
         </label>
         <label for="add-the-file">Добавить файл</label>
-        <input id="add-the-file" type="file">
+        <input id="add-the-file" type="file" name="add-file">
     </fieldset>
     <fieldset>
-        <h2>Изучаемое направление</h2>
+        <legend>Изучаемое направление</legend>
         <label for="specialization"> Выберите направление из списка</label>
         <select id="specialization">
             <option selected disabled value="">Выберите направление</option>
